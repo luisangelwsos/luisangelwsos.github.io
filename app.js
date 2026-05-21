@@ -401,11 +401,11 @@ function escHtml(str) {
 /* =========================================
    VISIT COUNTER
    ========================================= */
-fetch('https://api.countapi.xyz/hit/luisangelwsos-github-io/visits')
+fetch('https://api.counterapi.dev/v1/luisangelwsos/visits/up')
   .then(r => r.json())
   .then(data => {
     const el = document.getElementById('visitCount');
-    if (el && data.value) el.textContent = data.value.toLocaleString();
+    if (el && data.count) el.textContent = data.count.toLocaleString();
   })
   .catch(() => {
     const el = document.getElementById('visitCount');

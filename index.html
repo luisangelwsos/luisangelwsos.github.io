@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Luis Angel Rojas Chacon — Data Analyst & Operations Manager | Cantabria, España">
+  <title>Luis Angel Rojas Chacon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta property="og:title" content="Luis Angel Rojas Chacon — Data Analyst & Operations Manager">
+  <meta property="og:description" content="+5 años transformando operaciones con datos. Power BI, SQL, Python. Disponible para nuevas oportunidades en Cantabria, España.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://luisangel-rojas.pages.dev">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Luis Angel Rojas Chacon — Data Analyst">
+  <meta name="twitter:description" content="+5 años transformando operaciones con datos. Power BI, SQL, Python.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <div class="nav-logo">LAR<span class="logo-dot">.</span></div>
+    <div class="nav-links">
+      <a href="#about" class="nav-link" data-es="Sobre mí" data-en="About">Sobre mí</a>
+      <a href="#experience" class="nav-link" data-es="Experiencia" data-en="Experience">Experiencia</a>
+      <a href="#skills" class="nav-link" data-es="Skills" data-en="Skills">Skills</a>
+      <a href="#projects" class="nav-link" data-es="Proyectos" data-en="Projects">Proyectos</a>
+      <a href="#education" class="nav-link" data-es="Formación" data-en="Education">Formación</a>
+    </div>
+    <div class="nav-right">
+      <button class="lang-btn" id="langBtn">EN</button>
+      <a href="mailto:rojasluisangel5@gmail.com" class="btn-nav" data-es="Contactar" data-en="Contact">Contactar</a>
+    </div>
+    <button class="nav-burger" id="navBurger" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile" id="navMobile">
+    <a href="#about" class="nm-link" data-es="Sobre mí" data-en="About">Sobre mí</a>
+    <a href="#experience" class="nm-link" data-es="Experiencia" data-en="Experience">Experiencia</a>
+    <a href="#skills" class="nm-link" data-es="Skills" data-en="Skills">Skills</a>
+    <a href="#education" class="nm-link" data-es="Formación" data-en="Education">Formación</a>
+    <a href="mailto:rojasluisangel5@gmail.com" class="nm-link nm-cta" data-es="Contactar" data-en="Contact">Contactar</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <div class="grid-overlay"></div>
+    <div class="glow-1"></div>
+    <div class="glow-2"></div>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-badge">
+      <span class="pulse-dot"></span>
+      <span data-es="Disponible para nuevas oportunidades" data-en="Available for new opportunities">Disponible para nuevas oportunidades</span>
+    </div>
+    <h1 class="hero-name">
+      <span class="name-1">Luis Angel</span>
+      <span class="name-2">Rojas Chacon</span>
+    </h1>
+    <div class="hero-title">
+      <span class="title-prefix" data-es="Especialista en " data-en="Specialist in ">Especialista en </span><span class="tw-text" id="typewriter"></span><span class="tw-cursor">|</span>
+    </div>
+    <p class="hero-sub"
+       data-es="+5 años convirtiendo datos en decisiones. Liderazgo de equipos, optimización operativa y business intelligence."
+       data-en="+5 years turning data into decisions. Team leadership, operational optimization and business intelligence.">
+      +5 años convirtiendo datos en decisiones. Liderazgo de equipos, optimización operativa y business intelligence.
+    </p>
+    <div class="hero-cta">
+      <button class="btn-primary" onclick="openChat()" data-es="Habla con mi agente" data-en="Talk to my agent">Habla con mi agente</button>
+      <a href="#experience" class="btn-ghost" data-es="Ver experiencia" data-en="View experience">Ver experiencia</a>
+        <a href="cv-luis-angel-rojas.pdf" download="CV_Luis_Angel_Rojas.pdf" class="btn-ghost btn-cv" data-es="Descargar CV" data-en="Download CV">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span data-es="Descargar CV" data-en="Download CV">Descargar CV</span>
+        </a>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <div class="scroll-track"><div class="scroll-thumb"></div></div>
+  </div>
+</section>
+
+<!-- KPIs -->
+<section class="kpis">
+  <div class="container">
+    <div class="kpi-row reveal">
+      <div class="kpi">
+        <div class="kpi-val">5+</div>
+        <div class="kpi-lbl" data-es="Años de experiencia" data-en="Years of experience">Años de experiencia</div>
+      </div>
+      <div class="kpi-sep"></div>
+      <div class="kpi">
+        <div class="kpi-val">15%</div>
+        <div class="kpi-lbl" data-es="Incremento en ventas" data-en="Sales increase">Incremento en ventas</div>
+      </div>
+      <div class="kpi-sep"></div>
+      <div class="kpi">
+        <div class="kpi-val">10%</div>
+        <div class="kpi-lbl" data-es="Mejora operativa" data-en="Operational improvement">Mejora operativa</div>
+      </div>
+      <div class="kpi-sep"></div>
+      <div class="kpi">
+        <div class="kpi-val">3</div>
+        <div class="kpi-lbl" data-es="Certificaciones" data-en="Certifications">Certificaciones</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="container">
+    <p class="sec-label" data-es="Sobre mí" data-en="About me">Sobre mí</p>
+    <div class="about-wrap">
+      <div class="about-left reveal">
+        <h2 data-es="Donde los datos se convierten en resultados" data-en="Where data becomes results">Donde los datos se convierten en resultados</h2>
+        <p data-es="Con más de cinco años de experiencia en gestión y operaciones, he construido una carrera donde el análisis de datos impulsa cada decisión. Desde liderar equipos en entornos de alta demanda hasta implementar sistemas de trazabilidad y control de inventarios, mi enfoque siempre ha sido orientado a resultados medibles."
+           data-en="With over five years of experience in management and operations, I have built a career where data analysis drives every decision. From leading teams in high-demand environments to implementing traceability and inventory control systems, my focus has always been on measurable results.">
+          Con más de cinco años de experiencia en gestión y operaciones, he construido una carrera donde el análisis de datos impulsa cada decisión. Desde liderar equipos en entornos de alta demanda hasta implementar sistemas de trazabilidad y control de inventarios, mi enfoque siempre ha sido orientado a resultados medibles.
+        </p>
+        <div class="chip-row">
+          <span class="chip">Power BI</span>
+          <span class="chip">SQL</span>
+          <span class="chip">Python</span>
+          <span class="chip">Excel</span>
+          <span class="chip">Google Cloud</span>
+          <span class="chip">Salesforce</span>
+        </div>
+      </div>
+      <div class="about-right reveal">
+        <div class="profile-card">
+          <div class="profile-ava">LAR</div>
+          <div class="profile-name">Luis Angel Rojas</div>
+          <div class="profile-role" data-es="Analista de Datos" data-en="Data Analyst">Analista de Datos</div>
+          <div class="profile-loc">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Cantabria, España
+          </div>
+          <div class="profile-langs">
+            <span class="lang-pill">🇪🇸 Español</span>
+            <span class="lang-pill">🇬🇧 English</span>
+          </div>
+          <a href="mailto:rojasluisangel5@gmail.com" class="profile-cta" data-es="Enviar mensaje" data-en="Send message">Enviar mensaje</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section bg-alt" id="experience">
+  <div class="container">
+    <p class="sec-label" data-es="Trayectoria" data-en="Career">Trayectoria</p>
+    <h2 class="sec-title reveal" data-es="Experiencia Profesional" data-en="Professional Experience">Experiencia Profesional</h2>
+    <div class="timeline">
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-period">2025 — 2026</div>
+          <div class="tl-card">
+            <div class="tl-top">
+              <div>
+                <div class="tl-title" data-es="Técnico Forestal" data-en="Forestry Technician">Técnico Forestal</div>
+                <div class="tl-org">Liébana, Cantabria</div>
+              </div>
+              <span class="tl-tag tl-tag--new" data-es="Reciente" data-en="Recent">Reciente</span>
+            </div>
+            <ul class="tl-list">
+              <li data-es="Gestión forestal y operación de maquinaria especializada" data-en="Forest management and specialized machinery operation">Gestión forestal y operación de maquinaria especializada</li>
+              <li data-es="Certificado fitosanitarios nivel avanzado" data-en="Advanced phytosanitary certificate">Certificado fitosanitarios nivel avanzado</li>
+              <li data-es="Certificado Stihl: poda en altura y maquinaria" data-en="Stihl certificate: height pruning and machinery">Certificado Stihl: poda en altura y maquinaria</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot tl-dot--accent"></div>
+        <div class="tl-content">
+          <div class="tl-period">2019 — 2025</div>
+          <div class="tl-card tl-card--accent">
+            <div class="tl-top">
+              <div>
+                <div class="tl-title" data-es="Gerente de Tienda" data-en="Store Manager">Gerente de Tienda</div>
+                <div class="tl-org">KFC · Santander, España</div>
+              </div>
+              <span class="tl-tag tl-tag--feat">6 años</span>
+            </div>
+            <ul class="tl-list">
+              <li data-es="Análisis de ventas mensuales → +15% productos clave, +10% eficiencia operativa" data-en="Monthly sales analysis → +15% key products, +10% operational efficiency">Análisis de ventas mensuales → +15% productos clave, +10% eficiencia operativa</li>
+              <li data-es="People Manager: horarios rotativos, altas/bajas, formación continua de encargados" data-en="People Manager: rotating schedules, onboarding/offboarding, continuous manager training">People Manager: horarios rotativos, altas/bajas, formación continua de encargados</li>
+              <li data-es="Product/Facility Manager: inventarios, control PCA, trazabilidad diaria" data-en="Product/Facility Manager: inventory, PCA control, daily traceability">Product/Facility Manager: inventarios, control PCA, trazabilidad diaria</li>
+              <li data-es="Resolución de conflictos y atención al cliente en entorno de alta demanda" data-en="Conflict resolution and customer service in high-demand environment">Resolución de conflictos y atención al cliente en entorno de alta demanda</li>
+              <li data-es="Alianzas con comercios locales para visibilidad de promociones y eventos" data-en="Partnerships with local businesses for promotional and event visibility">Alianzas con comercios locales para visibilidad de promociones y eventos</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-period">2016 — 2019</div>
+          <div class="tl-card">
+            <div class="tl-top">
+              <div>
+                <div class="tl-title" data-es="Administrador de Propiedades" data-en="Property Administrator">Administrador de Propiedades</div>
+                <div class="tl-org">Ecuador</div>
+              </div>
+            </div>
+            <ul class="tl-list">
+              <li data-es="Gestión integral de propiedades residenciales: selección de inquilinos, mantenimiento y relaciones" data-en="Full residential property management: tenant selection, maintenance and relationships">Gestión integral de propiedades residenciales: selección de inquilinos, mantenimiento y relaciones</li>
+              <li data-es="Control de tareas diarias y análisis de datos con Excel y Word" data-en="Daily task management and data analysis with Excel and Word">Control de tareas diarias y análisis de datos con Excel y Word</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <div class="container">
+    <p class="sec-label" data-es="Proyectos" data-en="Projects">Proyectos</p>
+    <h2 class="sec-title reveal" data-es="Construido con Claude Code" data-en="Built with Claude Code">Construido con Claude Code</h2>
+    <div class="projects-grid">
+
+      <div class="proj-card reveal">
+        <div class="proj-header">
+          <div class="proj-icon">🤖</div>
+          <div class="proj-badges">
+            <span class="proj-badge proj-badge--live" data-es="En producción" data-en="Live">En producción</span>
+            <span class="proj-badge">Python</span>
+            <span class="proj-badge">Oracle Cloud</span>
+          </div>
+        </div>
+        <h3 data-es="Bot de Trading Algorítmico v5.0" data-en="Algorithmic Trading Bot v5.0">Bot de Trading Algorítmico v5.0</h3>
+        <p data-es="Sistema multi-agente ML-first para trading en Bybit Spot. 25+ agentes especializados con arquitectura de gates secuenciales, modelo GradientBoosting + LSTM calibrado (AUC=0.7645) y shadow trading automático." data-en="ML-first multi-agent system for Bybit Spot trading. 25+ specialized agents with sequential gate architecture, calibrated GradientBoosting + LSTM model (AUC=0.7645) and automatic shadow trading.">
+          Sistema multi-agente ML-first para trading en Bybit Spot. 25+ agentes especializados con arquitectura de gates secuenciales, modelo GradientBoosting + LSTM calibrado (AUC=0.7645) y shadow trading automático.
+        </p>
+        <div class="proj-stack">
+          <span class="proj-tech">Python</span>
+          <span class="proj-tech">ML / LSTM</span>
+          <span class="proj-tech">Oracle Cloud</span>
+          <span class="proj-tech">Bybit API</span>
+          <span class="proj-tech">Telegram Bot</span>
+          <span class="proj-tech">yfinance</span>
+        </div>
+        <div class="proj-stats">
+          <div class="proj-stat"><span class="pstat-n">25+</span><span class="pstat-l" data-es="Agentes IA" data-en="AI Agents">Agentes IA</span></div>
+          <div class="proj-stat"><span class="pstat-n">0.76</span><span class="pstat-l">AUC Score</span></div>
+          <div class="proj-stat"><span class="pstat-n">5min</span><span class="pstat-l" data-es="Ciclos" data-en="Cycles">Ciclos</span></div>
+        </div>
+      </div>
+
+      <div class="proj-card reveal">
+        <div class="proj-header">
+          <div class="proj-icon">🍽️</div>
+          <div class="proj-badges">
+            <span class="proj-badge proj-badge--live" data-es="Desplegado" data-en="Deployed">Desplegado</span>
+            <span class="proj-badge">HTML/CSS/JS</span>
+            <span class="proj-badge">Google Sheets</span>
+          </div>
+        </div>
+        <h3 data-es="Casa Ángel — Lo del Pibe" data-en="Casa Ángel — Lo del Pibe">Casa Ángel — Lo del Pibe</h3>
+        <p data-es="Sistema completo para restaurante en Potes, Cantabria. Web pública con diseño editorial premium, panel de administración con gestión de pedidos y reservas en tiempo real, menú digital con QR y backend en Google Apps Script." data-en="Full system for a restaurant in Potes, Cantabria. Premium editorial public website, admin panel with real-time order and reservation management, digital QR menu and Google Apps Script backend.">
+          Sistema completo para restaurante en Potes, Cantabria. Web pública con diseño editorial premium, panel de administración con gestión de pedidos y reservas en tiempo real, menú digital con QR y backend en Google Apps Script.
+        </p>
+        <div class="proj-stack">
+          <span class="proj-tech">HTML / CSS / JS</span>
+          <span class="proj-tech">Google Apps Script</span>
+          <span class="proj-tech">Google Sheets</span>
+          <span class="proj-tech">QR Menu</span>
+        </div>
+        <div class="proj-stack" style="margin-top:8px">
+          <span class="proj-tech proj-tech--claude" data-es="Construido con Claude Code" data-en="Built with Claude Code">✦ Construido con Claude Code</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal">
+        <div class="proj-header">
+          <div class="proj-icon">🏢</div>
+          <div class="proj-badges">
+            <span class="proj-badge">Next.js</span>
+            <span class="proj-badge">TypeScript</span>
+            <span class="proj-badge">Prisma</span>
+          </div>
+        </div>
+        <h3 data-es="Plataforma de Agencia de Marketing" data-en="Marketing Agency Platform">Plataforma de Agencia de Marketing</h3>
+        <p data-es="Aplicación web full-stack para agencia de marketing digital. Construida con Next.js App Router, TypeScript y Prisma ORM, con diseño moderno orientado a conversión." data-en="Full-stack web application for a digital marketing agency. Built with Next.js App Router, TypeScript and Prisma ORM, with modern conversion-oriented design.">
+          Aplicación web full-stack para agencia de marketing digital. Construida con Next.js App Router, TypeScript y Prisma ORM, con diseño moderno orientado a conversión.
+        </p>
+        <div class="proj-stack">
+          <span class="proj-tech">Next.js</span>
+          <span class="proj-tech">TypeScript</span>
+          <span class="proj-tech">Prisma ORM</span>
+          <span class="proj-tech">React</span>
+          <span class="proj-tech">Tailwind CSS</span>
+        </div>
+        <div class="proj-stack" style="margin-top:8px">
+          <span class="proj-tech proj-tech--claude" data-es="Construido con Claude Code" data-en="Built with Claude Code">✦ Construido con Claude Code</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section" id="skills">
+  <div class="container">
+    <p class="sec-label" data-es="Habilidades" data-en="Skills">Habilidades</p>
+    <h2 class="sec-title reveal" data-es="Stack Técnico" data-en="Technical Stack">Stack Técnico</h2>
+    <div class="skills-grid">
+
+      <div class="skill-card reveal">
+        <div class="sk-icon">📊</div>
+        <h3 data-es="Business Intelligence" data-en="Business Intelligence">Business Intelligence</h3>
+        <div class="sbars">
+          <div class="sbar-item"><div class="sbar-top"><span>Power BI</span><span>85%</span></div><div class="sbar"><div class="sbar-fill" data-p="85"></div></div></div>
+          <div class="sbar-item"><div class="sbar-top"><span>Looker</span><span>70%</span></div><div class="sbar"><div class="sbar-fill" data-p="70"></div></div></div>
+          <div class="sbar-item"><div class="sbar-top"><span>Google Sheets</span><span>90%</span></div><div class="sbar"><div class="sbar-fill" data-p="90"></div></div></div>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="sk-icon">🗄️</div>
+        <h3 data-es="Datos & Programación" data-en="Data & Programming">Datos & Programación</h3>
+        <div class="sbars">
+          <div class="sbar-item"><div class="sbar-top"><span>Excel Avanzado</span><span>92%</span></div><div class="sbar"><div class="sbar-fill" data-p="92"></div></div></div>
+          <div class="sbar-item"><div class="sbar-top"><span>SQL</span><span>75%</span></div><div class="sbar"><div class="sbar-fill" data-p="75"></div></div></div>
+          <div class="sbar-item"><div class="sbar-top"><span>Python</span><span>60%</span></div><div class="sbar"><div class="sbar-fill" data-p="60"></div></div></div>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="sk-icon">🔧</div>
+        <h3 data-es="Herramientas" data-en="Tools">Herramientas</h3>
+        <div class="sbars">
+          <div class="sbar-item"><div class="sbar-top"><span>Microsoft Office</span><span>95%</span></div><div class="sbar"><div class="sbar-fill" data-p="95"></div></div></div>
+          <div class="sbar-item"><div class="sbar-top"><span>Salesforce</span><span>70%</span></div><div class="sbar"><div class="sbar-fill" data-p="70"></div></div></div>
+          <div class="sbar-item"><div class="sbar-top"><span>Adobe Photoshop</span><span>65%</span></div><div class="sbar"><div class="sbar-fill" data-p="65"></div></div></div>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="sk-icon">👥</div>
+        <h3 data-es="Gestión & Liderazgo" data-en="Management & Leadership">Gestión & Liderazgo</h3>
+        <div class="sbars">
+          <div class="sbar-item">
+            <div class="sbar-top"><span data-es="Liderazgo de equipos" data-en="Team leadership">Liderazgo de equipos</span><span>95%</span></div>
+            <div class="sbar"><div class="sbar-fill" data-p="95"></div></div>
+          </div>
+          <div class="sbar-item">
+            <div class="sbar-top"><span data-es="Gestión operativa" data-en="Operations management">Gestión operativa</span><span>90%</span></div>
+            <div class="sbar"><div class="sbar-fill" data-p="90"></div></div>
+          </div>
+          <div class="sbar-item">
+            <div class="sbar-top"><span data-es="Análisis estratégico" data-en="Strategic analysis">Análisis estratégico</span><span>80%</span></div>
+            <div class="sbar"><div class="sbar-fill" data-p="80"></div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="section bg-alt" id="education">
+  <div class="container">
+    <p class="sec-label" data-es="Formación" data-en="Education">Formación</p>
+    <h2 class="sec-title reveal" data-es="Educación & Certificaciones" data-en="Education & Certifications">Educación & Certificaciones</h2>
+    <div class="edu-grid">
+      <div class="edu-card reveal">
+        <span class="edu-ico">🎓</span>
+        <div class="edu-body">
+          <div class="edu-name" data-es="Bachillerato" data-en="High School Diploma">Bachillerato</div>
+          <div class="edu-place">Colegio Virgen del Valle</div>
+        </div>
+      </div>
+      <div class="edu-card reveal">
+        <span class="edu-ico">🌐</span>
+        <div class="edu-body">
+          <div class="edu-name" data-es="Idiomas Extranjeros" data-en="Foreign Languages">Idiomas Extranjeros</div>
+          <div class="edu-place">Universidad de los Andes</div>
+        </div>
+      </div>
+      <div class="edu-card edu-card--cert reveal">
+        <span class="edu-ico">☁️</span>
+        <div class="edu-body">
+          <div class="edu-name" data-es="Fundamentos de la Computación" data-en="Computing Fundamentals">Fundamentos de la Computación</div>
+          <div class="edu-place">Google Cloud</div>
+          <span class="cert-badge">Google</span>
+        </div>
+      </div>
+      <div class="edu-card edu-card--cert reveal">
+        <span class="edu-ico">📊</span>
+        <div class="edu-body">
+          <div class="edu-name" data-es="Analista de Datos" data-en="Data Analyst">Analista de Datos</div>
+          <div class="edu-place">Google Cloud</div>
+          <span class="cert-badge">Google</span>
+        </div>
+      </div>
+      <div class="edu-card edu-card--cert reveal">
+        <span class="edu-ico">🦄</span>
+        <div class="edu-body">
+          <div class="edu-name" data-es="Analista de Datos — Excel, PowerBI, Looker, Python, SQL" data-en="Data Analyst — Excel, PowerBI, Looker, Python, SQL">Analista de Datos — Excel, PowerBI, Looker, Python, SQL</div>
+          <div class="edu-place">Unicorn Academy</div>
+          <span class="cert-badge" data-es="Certificado" data-en="Certified">Certificado</span>
+        </div>
+      </div>
+      <div class="edu-card edu-card--cert reveal">
+        <span class="edu-ico">📋</span>
+        <div class="edu-body">
+          <div class="edu-name" data-es="Administración y Gestión Nivel 1" data-en="Administration & Management Level 1">Administración y Gestión Nivel 1</div>
+          <div class="edu-place">Aspasia</div>
+          <span class="cert-badge" data-es="Certificado" data-en="Certified">Certificado</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="contact-card reveal">
+      <p class="sec-label" data-es="Contacto" data-en="Contact">Contacto</p>
+      <h2 data-es="¿Tienes un proyecto en mente?" data-en="Have a project in mind?">¿Tienes un proyecto en mente?</h2>
+      <p class="contact-sub"
+         data-es="Abierto a roles en análisis de datos, business intelligence y gestión de operaciones."
+         data-en="Open to roles in data analysis, business intelligence and operations management.">
+        Abierto a roles en análisis de datos, business intelligence y gestión de operaciones.
+      </p>
+      <div class="clinks">
+        <a class="clink" href="mailto:rojasluisangel5@gmail.com">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          rojasluisangel5@gmail.com
+        </a>
+        <a class="clink" href="tel:+34624235446">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.83 19.79 19.79 0 01.1 2.18 2 2 0 012.08.08h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.21-1.21a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          +34 624 235 446
+        </a>
+        <a class="clink" href="https://www.linkedin.com/in/luis-angel-rojas-chacon" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a class="clink clink--cv" href="cv-luis-angel-rojas.pdf" download="CV_Luis_Angel_Rojas.pdf">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span data-es="Descargar CV" data-en="Download CV">Descargar CV</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <span class="footer-logo">LAR<span class="logo-dot">.</span></span>
+      <span class="footer-copy" data-es="Hecho con datos y determinación · 2025" data-en="Made with data and determination · 2025">Hecho con datos y determinación · 2025</span>
+    </div>
+  </div>
+</footer>
+
+<!-- CHAT FAB -->
+<div class="fab" id="fab" onclick="toggleChat()">
+  <svg class="fab-ico fab-ico--msg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+  <svg class="fab-ico fab-ico--x" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  <span class="fab-lbl" data-es="Agente" data-en="Agent">Agente</span>
+  <span class="fab-ping"></span>
+</div>
+
+<!-- CHAT PANEL -->
+<div class="cp" id="chatPanel">
+  <div class="cp-head">
+    <div class="cp-ava">LAR</div>
+    <div class="cp-info">
+      <div class="cp-name">Luis Angel <span class="cp-ai" data-es="· Agente IA" data-en="· AI Agent">· Agente IA</span></div>
+      <div class="cp-status"><span class="online-dot"></span><span data-es="En línea ahora" data-en="Online now">En línea ahora</span></div>
+    </div>
+    <button class="cp-close" onclick="closeChat()">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="cp-msgs" id="cpMsgs"></div>
+  <div class="cp-suggs" id="cpSuggs"></div>
+  <div class="cp-row">
+    <input class="cp-input" id="cpInput" type="text" autocomplete="off"
+      data-es-ph="Escribe tu pregunta..." data-en-ph="Type your question..."
+      placeholder="Escribe tu pregunta..." onkeydown="handleKey(event)">
+    <button class="cp-send" onclick="sendChat()">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+    </button>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

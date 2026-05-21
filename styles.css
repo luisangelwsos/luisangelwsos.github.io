@@ -675,6 +675,54 @@ img { display: block; max-width: 100%; }
 }
 
 /* =========================================
+   LEARNING
+   ========================================= */
+.learning-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.learn-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: border-color 0.3s, transform 0.3s;
+}
+.learn-card:hover { border-color: var(--border-h); transform: translateY(-3px); }
+.learn-icon { font-size: 1.8rem; }
+.learn-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+.learn-desc { font-size: 0.875rem; color: var(--text-2); line-height: 1.65; }
+.learn-bar-wrap {
+  height: 4px;
+  background: var(--surface-h);
+  border-radius: 100px;
+  overflow: hidden;
+  margin-top: auto;
+}
+.learn-bar {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, var(--teal), var(--accent));
+  border-radius: 100px;
+  transition: width 1.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.learn-card.visible .learn-bar { width: var(--lp); }
+
+/* WhatsApp link */
+.clink--wa { border-color: rgba(37,211,102,0.3); color: #25d366; }
+.clink--wa:hover { border-color: #25d366; background: rgba(37,211,102,0.08); color: #25d366; }
+
+/* =========================================
    PROJECTS
    ========================================= */
 .projects-grid {
@@ -1146,6 +1194,7 @@ img { display: block; max-width: 100%; }
   .skills-grid { grid-template-columns: 1fr; }
   .edu-grid { grid-template-columns: repeat(2, 1fr); }
   .projects-grid { grid-template-columns: 1fr; }
+  .learning-grid { grid-template-columns: 1fr; }
   .proj-card .proj-stats { gap: 16px; }
 }
 @media (max-width: 768px) {

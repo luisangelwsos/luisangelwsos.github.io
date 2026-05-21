@@ -128,6 +128,34 @@ document.querySelectorAll('.nm-link').forEach(link => {
 });
 
 /* =========================================
+   KPI COUNTER ANIMATION
+   ========================================= */
+const kpiObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.querySelectorAll('.kpi-count').forEach(el => {
+        const target = parseInt(el.dataset.target);
+        const suffix = el.dataset.suffix || '';
+        const duration = 1800;
+        const start = performance.now();
+        const tick = (now) => {
+          const elapsed = now - start;
+          const progress = Math.min(elapsed / duration, 1);
+          const ease = 1 - Math.pow(1 - progress, 3);
+          el.textContent = Math.floor(ease * target) + suffix;
+          if (progress < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+      });
+      kpiObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.5 });
+
+const kpiRow = document.querySelector('.kpi-row');
+if (kpiRow) kpiObserver.observe(kpiRow);
+
+/* =========================================
    CHAT Q&A DATA
    ========================================= */
 const qa = [

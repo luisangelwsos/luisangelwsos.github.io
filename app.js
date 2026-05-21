@@ -197,6 +197,21 @@ const qa = [
     en: 'Luis Angel has built 3 real projects with Claude Code:\n\n🤖 Algorithmic Trading Bot v5.0\n25+ AI agents in Python, deployed on Oracle Cloud. ML (AUC=0.7645), real Bybit trading.\n\n🍽️ Casa Ángel — Lo del Pibe\nFull system for a restaurant in Potes, Cantabria: editorial website, admin panel with real-time orders and reservations, QR menu and Google Apps Script.\n\n🏢 Marketing Agency\nFull-stack app with Next.js, TypeScript and Prisma ORM.'
   },
   {
+    keys: ['cv', 'curriculum', 'descargar', 'download', 'pdf', 'documento'],
+    es: 'Puedes descargar el CV completo de Luis Angel directamente desde esta web.\n\n📄 Hay un botón "Descargar CV" en la parte superior (hero) y también en la sección de contacto al final de la página.\n\nSe descarga como PDF con toda su experiencia, habilidades y certificaciones.',
+    en: 'You can download Luis Angel\'s full CV directly from this website.\n\n📄 There is a "Download CV" button at the top (hero) and also in the contact section at the bottom of the page.\n\nIt downloads as a PDF with all his experience, skills and certifications.'
+  },
+  {
+    keys: ['qué es esta web', 'que es esta web', 'what is this', 'cómo funciona', 'como funciona', 'web', 'página', 'pagina', 'agente'],
+    es: 'Esta es la web-agente personal de Luis Angel 🤖\n\nEn lugar de un CV estático, es una experiencia interactiva donde puedes:\n\n• Hablar con este asistente y preguntarme lo que quieras\n• Ver su experiencia, proyectos y habilidades\n• Descargar su CV en PDF\n• Contactarle directamente\n\nFue construida con Claude Code y desplegada en GitHub Pages.',
+    en: 'This is Luis Angel\'s personal web-agent 🤖\n\nInstead of a static CV, it\'s an interactive experience where you can:\n\n• Chat with this assistant and ask anything\n• View his experience, projects and skills\n• Download his CV as PDF\n• Contact him directly\n\nBuilt with Claude Code and deployed on GitHub Pages.'
+  },
+  {
+    keys: ['claude', 'claude code', 'anthropic', 'ia', 'inteligencia artificial', 'artificial intelligence'],
+    es: 'Claude Code es la herramienta de IA de Anthropic con la que Luis Angel construye sus proyectos.\n\nCon ella ha creado:\n🤖 Un bot de trading con 25+ agentes IA\n🍽️ Un sistema completo para un restaurante\n🏢 Una plataforma web para agencia de marketing\n🌐 Esta misma web que estás viendo\n\nEs una de sus habilidades diferenciadoras: sabe construir soluciones reales con IA.',
+    en: 'Claude Code is Anthropic\'s AI tool that Luis Angel uses to build his projects.\n\nWith it he has built:\n🤖 A trading bot with 25+ AI agents\n🍽️ A complete system for a restaurant\n🏢 A web platform for a marketing agency\n🌐 This very website you\'re looking at\n\nIt\'s one of his differentiating skills: he knows how to build real solutions with AI.'
+  },
+  {
     keys: ['python', 'sql', 'programac', 'programm', 'codigo', 'code'],
     es: 'En programación y datos:\n\n🐍 Python (60%) — análisis estadístico y automatización\n🗄️ SQL (75%) — consultas y gestión de bases de datos\n📊 Excel Avanzado (92%) — modelado y análisis de datos\n\nFormado en Unicorn Academy con enfoque práctico en herramientas de data analysis.',
     en: 'In programming and data:\n\n🐍 Python (60%) — statistical analysis and automation\n🗄️ SQL (75%) — queries and database management\n📊 Advanced Excel (92%) — data modeling and analysis\n\nTrained at Unicorn Academy with a practical focus on data analysis tools.'
@@ -204,8 +219,8 @@ const qa = [
 ];
 
 const suggestions = {
-  es: ['¿Quién es Luis Angel?', '¿Qué experiencia tiene?', '¿Qué habilidades tiene?', '¿Cómo contactarle?', '¿Está disponible?'],
-  en: ['Who is Luis Angel?', 'What is his experience?', 'What are his skills?', 'How to contact him?', 'Is he available?']
+  es: ['¿Quién es Luis Angel?', '¿Qué proyectos ha hecho?', '¿Qué habilidades tiene?', '¿Cómo contactarle?', '¿Está disponible?'],
+  en: ['Who is Luis Angel?', 'What projects has he built?', 'What are his skills?', 'How to contact him?', 'Is he available?']
 };
 
 /* =========================================

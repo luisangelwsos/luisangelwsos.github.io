@@ -399,6 +399,20 @@ function escHtml(str) {
 }
 
 /* =========================================
+   VISIT COUNTER
+   ========================================= */
+fetch('https://api.countapi.xyz/hit/luisangelwsos-github-io/visits')
+  .then(r => r.json())
+  .then(data => {
+    const el = document.getElementById('visitCount');
+    if (el && data.value) el.textContent = data.value.toLocaleString();
+  })
+  .catch(() => {
+    const el = document.getElementById('visitCount');
+    if (el) el.closest('.footer-visits').style.display = 'none';
+  });
+
+/* =========================================
    SMOOTH ANCHOR SCROLL
    ========================================= */
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {

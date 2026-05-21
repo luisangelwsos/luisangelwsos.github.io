@@ -84,6 +84,19 @@ img { display: block; max-width: 100%; }
 }
 .nav-link:hover { color: var(--text); background: var(--surface); }
 .nav-right { display: flex; align-items: center; gap: 12px; margin-left: auto; }
+.nav-visits {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-2);
+}
+.nav-visits svg { opacity: 0.6; }
 .lang-btn {
   background: var(--surface);
   border: 1px solid var(--border);
